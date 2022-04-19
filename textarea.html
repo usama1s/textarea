@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textbox</title>
+</head>
+<style>
+    body{
+        padding: 50px;
+    }
+    .textareaDiv{
+        position: relative;
+        max-width: 100%;
+    }
+    .textbox{
+        resize: none;
+    border: 2px solid black;
+    border-radius: 6.9px;
+    padding: 31px 10px 10px 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: calc(100% - 24px);
+}
+
+    .textareaDiv .top{
+        position: absolute;
+    width: 100%;
+    display: block;
+    height: 20px;
+    background: #662D91;
+    border: 2px solid #662D91;
+    top: 1.999999px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    left: 2px;
+    align-items: center;
+    border-bottom: 2px solid black;
+    width: calc(100% - 7px);}
+    .dots{
+        width:6px;
+        height: 6px;
+        border: 2px solid black;
+        border-radius: 100%;
+        background: green;
+    }
+    .navigations{
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    .reddot{
+        background: red;
+    }
+    .whitedot{
+        background-color: #fff;
+    }
+    .greydot{
+        background: grey;
+    }
+</style>
+<body>
+    <div class="textareaDiv">
+      <div class="top">
+           <div class="navigations">
+                <div class="dots reddot"></div>
+                <div class="dots whitedot "></div>
+                <div class="dots greydot"></div>
+            
+            </div></div>
+           
+       
+        <textarea class="textbox" name="" id="" cols="30" rows="10"></textarea>
+    </div>
+    </body>
+</html>
