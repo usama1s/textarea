@@ -7,6 +7,9 @@
     <title>Textbox</title>
 </head>
 <style>
+*{
+  box-sizing: border-box;
+}
     body{
         padding: 50px;
     }
@@ -20,7 +23,7 @@
     border-radius: 6.9px;
     padding: 31px 10px 10px 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    width: calc(100% - 24px);
+    width: 100%;
 }
 
     .textareaDiv .top{
@@ -36,21 +39,21 @@
     left: 2px;
     align-items: center;
     border-bottom: 2px solid black;
-    width: calc(100% - 7px);}
+    width: calc(100% - 4px);display: flex;}
     .dots{
-        width:6px;
-        height: 6px;
+        width: 9px;
+        height: 9px;
         border: 2px solid black;
         border-radius: 100%;
         background: green;
-    }
+    margin: 0 4px;}
     .navigations{
         display: flex;
-        gap: 4px;
+        /* gap: 4px; */
         align-items: center;
-        margin-top: 5px;
-        margin-left: 5px;
-    }
+        /* margin-top: 5px; */
+        /* margin-left: 5px; */
+    padding: 0 5px;}
     .reddot{
         background: red;
     }
