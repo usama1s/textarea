@@ -10,21 +10,25 @@
 *{
   box-sizing: border-box;
 }
-    body{
+    /* body{
         padding: 50px;
-    }
+    } */
     .textareaDiv{
         position: relative;
         /* max-width: 100%; */
     border: 4px solid black;border-radius: 10px;overflow: hidden;}
-    .textbox{
+    .textareaDiv .body{
         resize: none;
     border: 0;
     border-radius: 0;
     padding: 10px;
     /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
     width: 100%;
-height: 500px;outline: none !important;text-decoration: none !important;}
+/* height: 500px; */
+outline: none !important;text-decoration: none !important;}
+.textareaDiv .body>p{
+  margin: 0;
+}
 
     .textareaDiv .top{
         /* position: absolute; */
@@ -40,27 +44,27 @@ height: 500px;outline: none !important;text-decoration: none !important;}
     align-items: center;
     border-bottom: 4px solid black;
     /* width: calc(100% - 4px); */display: flex;}
-    .dots{
+    .textareaDiv .dots{
         width: 15px;
         height: 15px;
         border: 4px solid black;
         border-radius: 100%;
         background: green;
     margin: 0 4px;}
-    .navigations{
+    .textareaDiv .navigations{
         display: flex;
         /* gap: 4px; */
         align-items: center;
         /* margin-top: 5px; */
         /* margin-left: 5px; */
     padding: 0 15px;}
-    .reddot{
+    .textareaDiv .reddot{
         background: red;
     }
-    .yellowdot{
+    .textareaDiv .yellowdot{
         background-color: yellow;
     }
-    .greendot{
+    .textareaDiv .greendot{
         background: green;
     }
 </style>
@@ -73,9 +77,14 @@ height: 500px;outline: none !important;text-decoration: none !important;}
                 <div class="dots greendot"></div>
 
             </div></div>
+            <div class="body">
 
+              <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
 
-        <textarea class="textbox" name="" id="" cols="30" rows="15"></textarea>
+        <!-- <textarea class="textbox" name="" id="" cols="30" rows="15"></textarea> -->
     </div>
     </body>
 </html>
